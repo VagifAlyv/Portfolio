@@ -1,0 +1,605 @@
+/* ==========================================================================
+   Vagif Aliyev - AI Systems Engineer Portfolio (Inspired by reference image)
+   ========================================================================== */
+
+:root {
+  --bg-page: #060a0a;
+  --bg-surface: #0a1212;
+  --bg-card: #0d1717;
+  --bg-card-hover: #121e1e;
+  --bg-mockup: #080f0f;
+  
+  --border: #162626;
+  --border-subtle: #111f1f;
+  --border-highlight: #223c3c;
+
+  --text-primary: #d1dede;
+  --text-secondary: #8fa3a3;
+  --text-muted: #5e7373;
+  --text-heading: #ffffff;
+
+  --accent-emerald: #10b981;
+  --accent-cyan: #38bdf8;
+  --accent-amber: #f59e0b;
+  --accent-purple: #a855f7;
+
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  --transition: all 0.25s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background Signal Waves SVG */
+.signal-bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.signal-waves {
+  width: 100%;
+  height: 100%;
+}
+
+.site-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem 1.5rem;
+}
+
+/* ==========================================================================
+   Hero / Header (Matching Reference Image Layout)
+   ========================================================================== */
+
+.hero-header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  font-family: var(--font-mono);
+  font-size: 2.35rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.title-sep {
+  color: var(--text-muted);
+  font-weight: 300;
+  margin: 0 0.4rem;
+}
+
+.hero-bio {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.hero-callout {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.contact-terminal {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.term-key {
+  color: var(--accent-amber);
+  font-weight: 600;
+}
+
+.term-val {
+  color: var(--text-heading);
+  text-decoration: none;
+}
+
+.copy-email-btn {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.copy-email-btn:hover {
+  color: var(--accent-cyan);
+}
+
+.term-divider {
+  color: var(--text-muted);
+  margin: 0 0.3rem;
+}
+
+/* ==========================================================================
+   Sections & Headings
+   ========================================================================== */
+
+.section {
+  margin-bottom: 4.5rem;
+}
+
+.section-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Thesis Card */
+.thesis-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.35;
+}
+
+.card-advisor {
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+/* Badges & Tags */
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  text-transform: lowercase;
+}
+
+.badge-accent {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-research {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge-open {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-award {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-amber);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   Projects Grid & UI Mockup Thumbnails (Matching Reference Image)
+   ========================================================================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  border-color: var(--border-highlight);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+/* UI Mockup Thumbnail Box (Pure CSS/SVG UI representation, NO AI images) */
+.ui-mockup-wrapper {
+  background: var(--bg-mockup);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.ui-mockup-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.65rem;
+  background: #050808;
+  border-bottom: 1px solid var(--border);
+}
+
+.ui-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.ui-dot.red { background: #ef4444; }
+.ui-dot.yellow { background: #eab308; }
+.ui-dot.green { background: #22c55e; }
+
+.ui-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-left: 0.4rem;
+}
+
+.ui-mockup-body {
+  padding: 1rem;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Audio UI Mockup */
+.audio-track-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.track-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.725rem;
+  color: var(--accent-cyan);
+}
+
+.audio-waveform-line {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.35rem;
+  border-radius: 4px;
+}
+
+.w-bar {
+  flex: 1;
+  background: var(--accent-cyan);
+  border-radius: 2px;
+  opacity: 0.85;
+}
+
+.audio-metrics-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+}
+
+.m-chip strong {
+  color: var(--accent-emerald);
+}
+
+/* Fuzzy UI Mockup */
+.fuzzy-ui .terminal-editor {
+  font-size: 0.725rem;
+  line-height: 1.5;
+}
+
+.c-keyword { color: var(--accent-cyan); }
+.c-str { color: var(--accent-amber); }
+.c-comment { color: var(--text-muted); }
+
+.fuzzy-meter-box {
+  margin-top: 0.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.meter-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  background: var(--accent-emerald);
+}
+
+.meter-val {
+  color: var(--accent-emerald);
+  font-weight: 700;
+}
+
+/* Graph UI Mockup */
+.graph-flow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.graph-header {
+  font-size: 0.7rem;
+  color: var(--accent-amber);
+  font-weight: 600;
+}
+
+.flow-nodes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.f-node {
+  padding: 0.2rem 0.4rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.net-debt { color: #ef4444; }
+.net-credit { color: var(--accent-emerald); }
+.f-arrow { color: var(--accent-amber); font-size: 0.7rem; }
+.flow-stat { font-size: 0.675rem; color: var(--text-muted); }
+
+/* Telemetry UI Mockup */
+.telemetry-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.725rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.6rem;
+  border-radius: 4px;
+}
+
+.t-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+}
+
+.t-row.highlight {
+  color: var(--accent-emerald);
+  font-weight: 600;
+}
+
+.t-val {
+  color: var(--text-heading);
+}
+
+/* Project Text Info */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-tagline {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.project-text {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+/* Skills Grid */
+.skills-block-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.skill-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.box-title {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-emerald);
+  margin-bottom: 0.5rem;
+}
+
+.box-items {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-emerald);
+  color: var(--text-heading);
+  padding: 0.75rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow-md);
+  font-size: 0.85rem;
+  z-index: 2000;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-block-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-title {
+    font-size: 1.85rem;
+  }
+}

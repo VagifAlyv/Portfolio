@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vagif Aliyev — AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Vagif Aliyev — AI Systems Engineer & Computer Engineering Senior. Specialized in AI software engineering, speech signal processing, and full-stack systems.">
+  <meta name="author" content="Vagif Aliyev">
+
+  <!-- Typography: JetBrains Mono + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Signal Wave Background SVG Canvas -->
+  <div class="signal-bg-overlay" aria-hidden="true">
+    <svg class="signal-waves" viewBox="0 0 1440 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="wave-path" d="M0,120 Q120,60 240,120 T480,120 T720,150 T960,100 T1200,130 T1440,110 L1440,600 L0,600 Z" fill="none" stroke="rgba(16, 185, 129, 0.08)" stroke-width="1.5"></path>
+      <path class="wave-path" d="M0,240 Q180,180 360,240 T720,220 T1080,260 T1440,210 L1440,600 L0,600 Z" fill="none" stroke="rgba(16, 185, 129, 0.12)" stroke-width="1.5"></path>
+      <path class="wave-path" d="M0,380 Q150,320 300,380 T600,360 T900,410 T1200,370 T1440,390 L1440,600 L0,600 Z" fill="none" stroke="rgba(16, 185, 129, 0.06)" stroke-width="1.5"></path>
+    </svg>
+  </div>
+
+  <div class="site-wrapper">
+
+    <!-- Hero / Header Section (Inspired by reference image) -->
+    <header class="hero-header">
+      <h1 class="main-title">AI Systems Engineer <span class="title-sep">|</span> Computer Engineering Senior</h1>
+      
+      <p class="hero-bio">
+        I combine machine learning, audio signal processing, and software engineering to build intelligent AI platforms and the underlying algorithms that power them.
+      </p>
+
+      <p class="hero-callout">
+        Interested in speech processing, explainable AI, or software architecture? Let's talk.
+      </p>
+
+      <div class="contact-terminal">
+        <span class="term-key">github:</span> <a href="https://github.com/VagifAlyv" target="_blank" rel="noopener noreferrer" class="term-val">@VagifAlyv</a>
+        <span class="term-divider">•</span>
+        <span class="term-key">email:</span> <span class="term-val copy-email-btn" data-email="v.aliyev2380@gmail.com" title="Click to copy email">v.aliyev2380 [at] gmail (dot) com</span>
+      </div>
+    </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      
+      <!-- Research & Featured Systems Section -->
+      <section id="research" class="section">
+        <div class="section-title-bar">
+          <h2 class="section-heading">Thesis Research</h2>
+          <span class="mono-label">B.Sc. Final Year Thesis</span>
+        </div>
+
+        <div class="card thesis-card">
+          <div class="card-header-row">
+            <h3 class="card-title">Speech-based early detection of Alzheimer’s disease using ensemble machine learning</h3>
+            <span class="badge badge-accent">Research Project</span>
+          </div>
+          <p class="card-advisor"><strong>Supervisor:</strong> Prof. Aytuğ Onan — IZTECH Department of Computer Engineering</p>
+          <p class="card-description">
+            Investigating non-invasive speech biomarkers for cognitive decline. Processing 500+ DementiaBank Pitt Corpus clinical sessions to extract fundamental frequency (F0) pitch variability, formant dispersion, pause ratios, and prosodic speech rhythm, paired with SHAP explainable AI (XAI) feature attributions.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Librosa</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Scikit-Learn</span>
+            <span class="tag">Ensemble ML</span>
+            <span class="tag">Explainable AI (XAI)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid (Realistic UI Mockup Cards like reference image) -->
+      <section id="projects" class="section">
+        <div class="section-title-bar">
+          <h2 class="section-heading">Featured Projects</h2>
+          <span class="mono-label">Selected Software & AI Systems</span>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Alzheimer's Speech Analysis Workstation UI -->
+          <article class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">acoustic-alzheimer</h3>
+              <span class="badge badge-research">research</span>
+            </div>
+
+            <!-- Realistic UI Mockup Thumbnail (No AI images) -->
+            <div class="ui-mockup-wrapper">
+              <div class="ui-mockup-bar">
+                <span class="ui-dot red"></span>
+                <span class="ui-dot yellow"></span>
+                <span class="ui-dot green"></span>
+                <span class="ui-title">speech_biomarker_analyzer.py</span>
+              </div>
+              <div class="ui-mockup-body audio-ui">
+                <div class="audio-track-box">
+                  <div class="track-info">
+                    <span class="track-name">DementiaBank_Session_042.wav</span>
+                    <span class="track-stat">16kHz • 40 Biomarkers</span>
+                  </div>
+                  <div class="audio-waveform-line">
+                    <span class="w-bar" style="height: 30%"></span>
+                    <span class="w-bar" style="height: 70%"></span>
+                    <span class="w-bar" style="height: 45%"></span>
+                    <span class="w-bar" style="height: 90%"></span>
+                    <span class="w-bar" style="height: 25%"></span>
+                    <span class="w-bar" style="height: 85%"></span>
+                    <span class="w-bar" style="height: 60%"></span>
+                    <span class="w-bar" style="height: 40%"></span>
+                    <span class="w-bar" style="height: 75%"></span>
+                    <span class="w-bar" style="height: 55%"></span>
+                  </div>
+                  <div class="audio-metrics-panel">
+                    <div class="m-chip"><span>F0 Drift:</span> <strong>14.2 Hz</strong></div>
+                    <div class="m-chip"><span>Pause Ratio:</span> <strong>0.32</strong></div>
+                    <div class="m-chip"><span>SHAP Rank:</span> <strong>#1 Pitch Var</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <h4 class="project-tagline">Speech-based Cognitive Decline Screening</h4>
+              <p class="project-text">
+                Acoustic feature extraction framework analyzing prosodic markers, formant dispersion, and pause patterns to deliver interpretable cognitive decline screening scores.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Librosa</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">SHAP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Fuzzy Logic Sentiment & Sarcasm Engine UI -->
+          <article class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">fuzzy-sentiment</h3>
+              <span class="badge badge-open">open source</span>
+            </div>
+
+            <!-- Realistic UI Mockup Thumbnail -->
+            <div class="ui-mockup-wrapper">
+              <div class="ui-mockup-bar">
+                <span class="ui-dot red"></span>
+                <span class="ui-dot yellow"></span>
+                <span class="ui-dot green"></span>
+                <span class="ui-title">fuzzy_inference_engine.py</span>
+              </div>
+              <div class="ui-mockup-body fuzzy-ui">
+                <div class="terminal-editor">
+                  <div class="code-line"><span class="c-keyword">rule1</span> = ctrl.Rule(polarity[<span class="c-str">'pos'</span>] &amp; irony[<span class="c-str">'high'</span>], sentiment[<span class="c-str">'sarcastic_neg'</span>])</div>
+                  <div class="code-line"><span class="c-comment"># Membership Function Defuzzification</span></div>
+                  <div class="code-line"><span class="c-keyword">output</span> = sentiment_sim.compute()</div>
+                  <div class="fuzzy-meter-box">
+                    <span class="meter-label">Sarcastic Polarity Score:</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 82%;"></div></div>
+                    <span class="meter-val">-0.82</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <h4 class="project-tagline">Neuro-Symbolic Sentiment & Sarcasm Engine</h4>
+              <p class="project-text">
+                Mamdani fuzzy inference engine with custom membership functions mapping text sentiment, irony markers, and negation scope for transparent non-binary classification.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">scikit-fuzzy</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Fuzzy Rules</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: RASHOT Debt Simplification Dashboard UI -->
+          <article class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">rashot-app</h3>
+              <span class="badge badge-award">🏆 3rd place hackathon</span>
+            </div>
+
+            <!-- Realistic UI Mockup Thumbnail -->
+            <div class="ui-mockup-wrapper">
+              <div class="ui-mockup-bar">
+                <span class="ui-dot red"></span>
+                <span class="ui-dot yellow"></span>
+                <span class="ui-dot green"></span>
+                <span class="ui-title">rashot_settlement_matrix.ts</span>
+              </div>
+              <div class="ui-mockup-body graph-ui">
+                <div class="graph-flow-container">
+                  <div class="graph-header">Directed Graph Debt Simplification Matrix</div>
+                  <div class="flow-nodes">
+                    <div class="f-node">User A <span class="net-debt">-$45</span></div>
+                    <div class="f-arrow">➔ $45 ➔</div>
+                    <div class="f-node">User B <span class="net-credit">+$45</span></div>
+                  </div>
+                  <div class="flow-stat">Optimized: 12 transactions reduced to 3 settlements (O(N log N))</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <h4 class="project-tagline">Real-Time Expense Sharing & Debt Simplifier</h4>
+              <p class="project-text">
+                Full-stack web application built during a 10-hour hackathon. Features real-time collaborative balance sync and a greedy directed graph debt minimization algorithm.
+              </p>
+              <div class="card-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Graph Algorithms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Robotic Feeder Telemetry Dashboard UI -->
+          <article class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">robotic-feeder</h3>
+              <span class="badge badge-open">embedded c++</span>
+            </div>
+
+            <!-- Realistic UI Mockup Thumbnail -->
+            <div class="ui-mockup-wrapper">
+              <div class="ui-mockup-bar">
+                <span class="ui-dot red"></span>
+                <span class="ui-dot yellow"></span>
+                <span class="ui-dot green"></span>
+                <span class="ui-title">arduino_interrupt_safety.cpp</span>
+              </div>
+              <div class="ui-mockup-body telemetry-ui">
+                <div class="telemetry-box">
+                  <div class="t-row">
+                    <span>Loadcell Weight (HX711):</span> <strong class="t-val">350.5g</strong>
+                  </div>
+                  <div class="t-row">
+                    <span>Servo PWM Trajectory:</span> <strong class="t-val">94.2° Angle</strong>
+                  </div>
+                  <div class="t-row highlight">
+                    <span>Interrupt Safety Response:</span> <strong class="t-val">&lt;50ms Halt (INT1)</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <h4 class="project-tagline">Weight-Controlled Arm with Interrupt Safety</h4>
+              <p class="project-text">
+                Arduino Mega 2560 robotic arm system with closed-loop HX711 loadcell weight dispensing and ultrasonic sensor hardware interrupt safety halting.
+              </p>
+              <div class="card-tags">
+                <span class="tag">C / C++</span>
+                <span class="tag">Arduino Mega</span>
+                <span class="tag">HX711</span>
+                <span class="tag">Interrupts</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section id="skills" class="section">
+        <div class="section-title-bar">
+          <h2 class="section-heading">Technical Arsenal</h2>
+          <span class="mono-label">Core Competencies</span>
+        </div>
+
+        <div class="skills-block-grid">
+          <div class="skill-box">
+            <h4 class="box-title">Languages & Parallel Computing</h4>
+            <p class="box-items">Python, C, C++, Java, TypeScript, JavaScript, OpenMP (Parallel C)</p>
+          </div>
+          <div class="skill-box">
+            <h4 class="box-title">Machine Learning & AI</h4>
+            <p class="box-items">PyTorch, TensorFlow, Scikit-learn, Keras, scikit-fuzzy, 1D/2D CNNs, LSTMs, Explainable AI (XAI)</p>
+          </div>
+          <div class="skill-box">
+            <h4 class="box-title">Data & Signal Processing</h4>
+            <p class="box-items">Librosa, OpenCV, NumPy, Pandas, Matplotlib, PPG Biosignal Analysis</p>
+          </div>
+          <div class="skill-box">
+            <h4 class="box-title">Web, Databases & Tools</h4>
+            <p class="box-items">React.js, Node.js, Spring Boot, PostgreSQL, Oracle SQL, Docker, Linux (Arch/Ubuntu), ROS2, Arduino</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert">
+      <span id="toastText">Email copied to clipboard</span>
+    </div>
+
+    <!-- Minimal Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Vagif Aliyev • AI Systems Engineer</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
